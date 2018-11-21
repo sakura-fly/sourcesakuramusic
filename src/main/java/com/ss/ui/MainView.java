@@ -12,6 +12,7 @@ public class MainView extends JFrame {
     private void inti() {
         setSize(1100, 700);
         add(new LeftList(),BorderLayout.WEST);
+        add(new HeadView(),BorderLayout.NORTH);
         add(new RightView());
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
