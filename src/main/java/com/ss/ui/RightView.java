@@ -5,8 +5,17 @@ import com.ss.util.Contents;
 public class RightView extends BaseView{
 
 
-    public RightView() {
+    private RightView() {
         super(0,0,80,80,Contents.RIGHT_VIEW_BACKGROUND);
+    }
+
+
+    private static class Instance{
+        private static final RightView instance = new RightView();
+    }
+
+    public static RightView getInstance(){
+        return Instance.instance;
     }
 
     @Override
