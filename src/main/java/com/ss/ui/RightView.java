@@ -22,13 +22,4 @@ public class RightView extends BaseView{
     public void init() {
         super.init();
     }
-    // public RightView() {
-    //     init();
-    // }
-    //
-    // private void init(){
-    //     setBackground(Color.blue);
-    //     setBounds(10, 150, 300, 60);
-    //     // setVisible(true);
-    // }
 }

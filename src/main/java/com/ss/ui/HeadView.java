@@ -2,13 +2,22 @@ package com.ss.ui;
 
 import com.ss.listener.focus.HintText;
 import com.ss.util.Contents;
+import sun.security.jca.GetInstance;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class HeadView extends BaseView {
-    HeadView() {
+    private HeadView() {
         super(0,0,0,48,Contents.HEAD_VIEW_BACKGROUND);
+    }
+
+    private static class instance{
+        private static HeadView instance = new HeadView();
+    }
+
+    public static HeadView getInstance(){
+        return instance.instance;
     }
 
     @Override

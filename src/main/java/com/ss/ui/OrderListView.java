@@ -6,8 +6,15 @@ import com.ss.util.Contents;
 import java.awt.*;
 
 public class OrderListView extends BaseView {
-    public OrderListView() {
+    private OrderListView() {
         super(0,0,200,0,Contents.LEFT_LIST_BACKGROUND);
+    }
+    private static class instance {
+        private static OrderListView instance = new OrderListView();
+    }
+
+    public static OrderListView getInstance() {
+        return OrderListView.instance.instance;
     }
 
     @Override
