@@ -1,5 +1,6 @@
 package com.ss.ui;
 
+import com.ss.listener.mouse.Move;
 import com.ss.util.Contents;
 
 import java.awt.*;
@@ -12,11 +13,13 @@ public class OrderListView extends BaseView {
     @Override
     public void init() {
         super.init();
-        setLayout(new GridLayout(0,1));
+        GridLayout g = new GridLayout(0, 1);
+        // 竖间隔
+        g.setVgap(3);
+        setLayout(g);
         for (int i = 0; i < 10; i++){
             Label l = new Label("list" + i);
-            String  c = "#66cc" + String.format("%02d",i * 10);
-            l.setBackground(Color.decode(c));
+            l.addMouseListener(new Move());
             l.setPreferredSize(new Dimension(0,30));
             add(l);
         }
