@@ -22,7 +22,7 @@ public class OrderListView extends BaseView {
         super.init();
         GridLayout g = new GridLayout(0, 1);
         // 竖间隔
-        g.setVgap(3);
+        // g.setVgap(3);
         setLayout(g);
         for (int i = 0; i < 10; i++){
             Label l = new Label("list" + i);

@@ -11,4 +11,6 @@ public class Contents {
     public static final Color MOUSE_ENTER_BACKGROUND = Color.decode("#00dddddd");
     public static final Color DEFAULT_BACKGROUND = Color.WHITE;
 
+    public static final int HEAD_VIEW_HIGH = 48;
+
 }
