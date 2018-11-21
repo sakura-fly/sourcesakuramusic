@@ -15,8 +15,12 @@ public class LeftList extends BaseView {
     public void init() {
         super.init();
         setLayout(new GridLayout());
+        // 宽度
         setPreferredSize(new Dimension(width,hight));
-        add(new JScrollPane(new OrderListView()));
+        JScrollPane jsp = new JScrollPane(new OrderListView());
+        // 滚动条速度
+        jsp.getVerticalScrollBar().setUnitIncrement(16);
+        add(jsp);
 
         // setLayout();
     }

@@ -12,13 +12,9 @@ public class OrderListView extends BaseView {
     @Override
     public void init() {
         super.init();
-        // Panel orderListPanel = new Panel();
         setLayout(new GridLayout(0,1));
-        for (int i = 0; i < 300; i++){
-            add(new Label(i + ""));
+        for (int i = 0; i < 50; i++){
+            add(new Label("list" +i));
         }
-        // add(orderListPanel);
-        // setPreferredSize(new Dimension(width,hight));
-        // setLayout();
     }
 }
