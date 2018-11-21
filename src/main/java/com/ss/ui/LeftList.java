@@ -14,6 +14,10 @@ public class LeftList extends BaseView {
     @Override
     public void init() {
         super.init();
+        setLayout(new GridLayout());
         setPreferredSize(new Dimension(width,hight));
+        add(new JScrollPane(new OrderListView()));
+
+        // setLayout();
     }
 }
