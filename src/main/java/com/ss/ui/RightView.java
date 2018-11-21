@@ -2,14 +2,11 @@ package com.ss.ui;
 
 import com.ss.util.Contents;
 
-import javax.swing.*;
-import java.awt.*;
-
 public class RightView extends BaseView{
 
 
     public RightView() {
-        super(0,0,80,80,Contents.RIGHT_VIEW_BACKGROUD);
+        super(0,0,80,80,Contents.RIGHT_VIEW_BACKGROUND);
     }
 
     @Override
